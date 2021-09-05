@@ -1,0 +1,11 @@
+.navbar {
+  background-color: darkgrey;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__link {
+  color: white;
+  text-decoration: none;
+}
