@@ -1,20 +1,30 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './navbar.css';
+import HeartLogo from './../../assets/images/heart.png';
 
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar__container">
-        <NavLink className="navbar__link" to="/">
+        <NavLink
+          activeClassName="active"
+          className="navbar__link navbar__link--сharacters"
+          to="/сharacters"
+        >
           Characters
         </NavLink>
-        /
-        <NavLink className="navbar__link" to="/favourites">
+        <NavLink
+          activeClassName="active"
+          className="navbar__link navbar__link--favourites"
+          to="/favourites"
+        >
           Favourites
         </NavLink>
       </div>
-      <div className="navbar__like">like</div>
+      <div className="navbar__like">
+        <img className="navbar__like--logo" src={HeartLogo} alt="heart" />
+      </div>
     </div>
   );
 };

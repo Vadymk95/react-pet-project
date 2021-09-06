@@ -1,11 +1,25 @@
 .navbar {
-  background-color: darkgrey;
-  padding: 10px;
+  background-color: darkslategrey;
+  padding: 20px 50px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navbar__link {
-  color: white;
+  color: darkgrey;
   text-decoration: none;
+}
+
+.navbar__link--favourites {
+  margin-left: 10px;
+}
+
+.active {
+  color: white;
+}
+
+.navbar__like--logo {
+  width: 20px;
+  height: 20px;
 }
